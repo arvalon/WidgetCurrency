@@ -1,0 +1,10 @@
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.example.admin.widgetcurrency.MainActivity"
+    android:initialLayout="@layout/currency"
+    android:minHeight="40dp"
+    android:minWidth="160dp"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="100000"
+    >
+</appwidget-provider>
