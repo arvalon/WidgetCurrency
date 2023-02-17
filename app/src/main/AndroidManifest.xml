@@ -10,7 +10,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <receiver android:name=".ExchangeWidgetProvider">
+
+        <receiver android:name=".ExchangeWidgetProvider"
+            android:exported="true">
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/appwidget_provider" />
@@ -20,7 +22,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
@@ -34,6 +37,7 @@
         <service
             android:name=".MyIntentService"
             android:exported="false"></service>
+
     </application>
 
 </manifest>
